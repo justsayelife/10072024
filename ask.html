@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sevgi Mesajı</title>
+  <style>
+    body {
+      background-color: #8f9779; /* Haki yeşil */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      color: #2e8b57; /* Pastel yeşil */
+    }
+
+    button {
+      background-color: #556b2f; /* Daha koyu haki yeşil */
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #6b8e23; /* Daha açık haki yeşil */
+    }
+
+    /* Modal (açılır pencere) stili */
+    .modal {
+      display: none; /* Başlangıçta gizli */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .modal h2 {
+      color: #2e8b57; /* Pastel yeşil */
+      font-size: 24px;
+    }
+
+    .modal span {
+      font-size: 30px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="gosterModal()">Tıkla</button>
+
+  <div id="modal" class="modal">
+    <h2>Seni çok seviyorum it herifim <span>❤️ 🌹 🦁</span></h2>
+  </div>
+
+  <script>
+    function gosterModal() {
+      document.getElementById("modal").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
